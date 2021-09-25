@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+
 import { Div1 } from '../Header/HeaderStyles';
 import { SocialIcons } from './HeroStyles';
 
@@ -25,6 +27,10 @@ const Hero = (props) => (
           Tunisia specializing in building websites and a music producer when
           not solving bugs.
         </SectionText>
+        <Link href='#projects'>
+          <Button>Learn More</Button>
+        </Link>
+
         <Div1>
           <SocialIcons href='https://google.com'>
             <AiFillGithub size='3rem' />

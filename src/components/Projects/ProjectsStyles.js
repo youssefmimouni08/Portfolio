@@ -9,7 +9,7 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 3rem;
   place-items: center;
   column-gap: 2rem;
@@ -17,7 +17,7 @@ export const GridContainer = styled.section`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+
     padding-bottom: 0;
   }
 `;
@@ -25,9 +25,9 @@ export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
-  width: 400px;
+  width: 330px;
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
+    width: 90%;
   }
 `;
 export const TitleContent = styled.div`
@@ -102,4 +102,58 @@ export const TagList = styled.ul`
 export const Tag = styled.li`
   color: #d8bfbf;
   font-size: 1.5rem;
+`;
+export const Sectionp = styled.section`
+  display: ${(props) => (props.grid ? 'grid' : 'flex')};
+  flex-direction: ${(props) => (props.row ? 'row' : 'column')};
+  padding: ${(props) => (props.nopadding ? '0' : '32px 48px 0')};
+  margin: 0 auto;
+  max-width: initial;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+`;
+export const SectionTitlep = styled.h2`
+  font-weight: 800;
+  font-size: ${(props) => (props.main ? '50px' : '56px')};
+  line-height: ${(props) => (props.main ? '72px' : '56px')};
+  width: max-content;
+  max-width: 100%;
+  background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(255, 255, 255, 0.66) 60.15%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  padding: ${(props) => (props.main ? '0px 0 16px' : '0')};
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: ${(props) => (props.main ? '56px' : '48px')};
+    line-height: ${(props) => (props.main ? '56px' : '48px')};
+    margin-bottom: 12px;
+    padding: ${(props) => (props.main ? '40px 0 12px' : '0')};
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 32px;
+    line-height: 40px;
+    font-size: ${(props) => (props.main ? '28px' : '32px')};
+    line-height: ${(props) => (props.main ? '32px' : '40px')};
+    margin-bottom: 8px;
+    padding: ${(props) => (props.main ? '16px 0 8px' : '0')};
+    max-width: 100%;
+  }
 `;

@@ -1,4 +1,5 @@
 import React from 'react';
+import BgAnimation from '../BackgrooundAnimation/BackgroundAnimation';
 
 import {
   BlogCard,
@@ -12,28 +13,31 @@ import {
   TitleContent,
   UtilityList,
   Img,
+  Sectionp,
+  SectionTitlep,
 } from './ProjectsStyles';
-import {
-  Section,
-  SectionDivider,
-  SectionTitle,
-} from '../../styles/GlobalComponents';
+import { SectionDivider } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
 const Projects = () => (
-  <Section nopadding id='projects'>
+  <Sectionp nopadding id='projects'>
     <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
+    <SectionTitlep main>Projects</SectionTitlep>
     <GridContainer>
-      {projects.map((project) => (
-        <div>
-          {project.title}
-          <br />
-          {project.description}
-        </div>
-      ))}
+      {projects.map(
+        ({ id, image, title, description, tags, source, visit }) => (
+          <BlogCard key={id}>
+            <Img src={image} />
+            <TitleContent>
+              <HeaderThree title>{title}</HeaderThree>
+              <Hr />
+              <CardInfo>{description}</CardInfo>
+            </TitleContent>
+          </BlogCard>
+        )
+      )}
     </GridContainer>
-  </Section>
+  </Sectionp>
 );
 
 export default Projects;

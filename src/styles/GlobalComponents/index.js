@@ -26,7 +26,7 @@ export const Section = styled.section`
 
 export const SectionTitle = styled.h2`
   font-weight: 800;
-  font-size: ${(props) => (props.main ? '65px' : '56px')};
+  font-size: ${(props) => (props.main ? '50px' : '56px')};
   line-height: ${(props) => (props.main ? '72px' : '56px')};
   width: max-content;
   max-width: 100%;
@@ -60,9 +60,9 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
   max-width: 800px;
-  font-size: 24px;
-  line-height: 40px;
-  font-weight: 300;
+  font-size: 17px;
+  line-height: 170%;
+  font-weight: 500;
   padding-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.5);
 
@@ -180,7 +180,7 @@ export const ButtonBack = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 80px')};
+  margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 60px')};
   color: #fff;
   background: ${({ alt }) =>
     alt
