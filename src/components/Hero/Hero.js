@@ -1,0 +1,44 @@
+import React from 'react';
+import { Div1 } from '../Header/HeaderStyles';
+import { SocialIcons } from './HeroStyles';
+
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+} from '../../styles/GlobalComponents';
+import Button from '../../styles/GlobalComponents/Button';
+import { LeftSection } from './HeroStyles';
+
+const Hero = (props) => (
+  <>
+    <Section row nopadding>
+      <LeftSection>
+        <SectionTitle main center>
+          <SectionText>Hi there, my name is</SectionText>
+          Youssef Mimouni.
+        </SectionTitle>
+        <SectionText>
+          An undergraduate software engineer and a Full Stack web developer from
+          Tunisia specializing in building websites and a music producer when
+          not solving bugs.
+        </SectionText>
+        <Div1>
+          <SocialIcons href='https://google.com'>
+            <AiFillGithub size='3rem' />
+          </SocialIcons>
+          <SocialIcons href='https://google.com'>
+            <AiFillLinkedin size='3rem' />
+          </SocialIcons>
+          <SocialIcons href='https://google.com'>
+            <AiFillInstagram size='3rem' />
+          </SocialIcons>
+        </Div1>
+      </LeftSection>
+    </Section>
+  </>
+);
+
+export default Hero;
