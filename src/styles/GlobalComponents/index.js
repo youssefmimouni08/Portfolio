@@ -30,6 +30,7 @@ export const SectionTitle = styled.h2`
   line-height: ${(props) => (props.main ? '72px' : '56px')};
   width: max-content;
   max-width: 100%;
+  opacity: 100%;
   background: linear-gradient(
     121.57deg,
     #ffffff 18.77%,
@@ -44,12 +45,14 @@ export const SectionTitle = styled.h2`
     font-size: ${(props) => (props.main ? '56px' : '48px')};
     line-height: ${(props) => (props.main ? '56px' : '48px')};
     margin-bottom: 12px;
+    opacity: 100%;
     padding: ${(props) => (props.main ? '40px 0 12px' : '0')};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 32px;
     line-height: 40px;
+    opacity: 100%;
     font-size: ${(props) => (props.main ? '39px' : '32px')};
     line-height: ${(props) => (props.main ? '50px' : '40px')};
     margin-bottom: 8px;
