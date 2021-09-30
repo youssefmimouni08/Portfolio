@@ -2,11 +2,19 @@ import Link from 'next/link';
 import React from 'react';
 import { DiCssdeck } from 'react-icons/di';
 
-import { Container, Div1, Div2, Div3, NavLink, Span } from './HeaderStyles';
+import {
+  Div1LOGO,
+  Container,
+  Div1,
+  Div2,
+  Div3,
+  NavLink,
+  Span,
+} from './HeaderStyles';
 
 const Header = () => (
   <Container>
-    <Div1>
+    <Div1LOGO>
       <Link href='/'>
         <a
           style={{
@@ -18,7 +26,7 @@ const Header = () => (
           <DiCssdeck size='3rem' /> <Span>Portfolio</Span>
         </a>
       </Link>
-    </Div1>
+    </Div1LOGO>
     <Div3>
       <li>
         <Link href='#projects'>

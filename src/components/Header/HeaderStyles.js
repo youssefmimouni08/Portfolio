@@ -21,6 +21,20 @@ export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
   flex-direction: row;
+  margin-left: 9px;
+  column-gap: 2vh;
+  align-content: center;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-area: 1 / 1 / 2 / 3;
+    margin-bottom: 40px;
+    margin-left: 9px;
+    column-gap: 2vh;
+  }
+`;
+export const Div1LOGO = styled.div`
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: row;
   align-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
@@ -42,6 +56,14 @@ export const Div3 = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
+    display: none;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    align-items: center;
+    grid-area: 1 / 4 / 2 / 6;
+    column-gap: 5vh;
+    margin-right: 80px;
   }
 `;
 

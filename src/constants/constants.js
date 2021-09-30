@@ -1,8 +1,7 @@
 export const projects = [
   {
     title: 'MERN Memories',
-    description:
-      'A professional platform for job interviews management and tracking aimed for HR managers.',
+    description: 'Some very long Description text aboutt the application.',
     image: '/images/1.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
@@ -11,8 +10,7 @@ export const projects = [
   },
   {
     title: 'MERN Memories',
-    description:
-      'Matchmaking web appllication that helps users find their lost items with the help of an .',
+    description: 'Some very long Description text aboutt the application.',
     image: '/images/1.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
@@ -21,8 +19,7 @@ export const projects = [
   },
   {
     title: 'MERN Memories',
-    description:
-      'Cross-Platform management application (web,desktop) created for an insurance.',
+    description: 'Some very long Description text aboutt the application.',
     image: '/images/1.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
