@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'MERN Memories',
     description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories ",
+      'A professional platform for job interviews management and tracking aimed for HR managers.',
     image: '/images/1.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
@@ -12,7 +12,7 @@ export const projects = [
   {
     title: 'MERN Memories',
     description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories ",
+      'Matchmaking web appllication that helps users find their lost items with the help of an .',
     image: '/images/1.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
@@ -22,7 +22,7 @@ export const projects = [
   {
     title: 'MERN Memories',
     description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories ",
+      'Cross-Platform management application (web,desktop) created for an insurance.',
     image: '/images/1.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',

@@ -1,6 +1,6 @@
 import React from 'react';
 import BgAnimation from '../BackgrooundAnimation/BackgroundAnimation';
-
+import Churn from '../Projectimages/Churn';
 import {
   BlogCard,
   CardInfo,
@@ -15,6 +15,7 @@ import {
   Img,
   Sectionp,
   SectionTitlep,
+  Cardfooter,
 } from './ProjectsStyles';
 import { SectionDivider } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
@@ -27,12 +28,15 @@ const Projects = () => (
       {projects.map(
         ({ id, image, title, description, tags, source, visit }) => (
           <BlogCard key={id}>
-            <Img src={image} />
             <TitleContent>
+              <Churn />
+
               <HeaderThree title>{title}</HeaderThree>
-              <Hr />
+
               <CardInfo>{description}</CardInfo>
             </TitleContent>
+            <TitleContent></TitleContent>
+            <TagList></TagList>
           </BlogCard>
         )
       )}
