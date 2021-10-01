@@ -37,6 +37,7 @@ export const BlogCard = styled.div`
   overflow: hidden;
   @media (max-width: 768px) and (orientation: landscape) {
     width: 40vw !important;
+    height: 60vw !important;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80vw;
@@ -51,7 +52,11 @@ export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
-  margin-bottom: 13vh;
+  min-height: 52vh;
+  @media (max-width: 768px) and (orientation: landscape) {
+    margin-bottom: 0vh;
+    min-height: 90vh;
+  }
 `;
 
 export const HeaderThree = styled.h3`
@@ -64,11 +69,12 @@ export const HeaderThree = styled.h3`
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0;
   }
-  @media (orientation: portrait) {
+  @media (orientation: portrait) and (max-width: 640px) {
     letter-spacing: 4px;
-    padding: 4rem 0;
+    padding: 1rem 0 2rem;
     font-size: 3rem;
   }
+
   @media (orientation: landscape) {
     padding: 0 0 1rem;
     font-size: 2.5rem;
@@ -97,9 +103,11 @@ export const CardInfo = styled.p`
   width: 100%;
   padding: 0 30px 10px;
   color: #e4e6e7;
-  font-style: 2rem;
+  font-size: 1em;
   line-height: 24px;
 
+  @media (max-width: 768px) and (orientation: landscape) {
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.3rem 0 10px;
   }

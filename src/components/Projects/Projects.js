@@ -35,8 +35,10 @@ const Projects = () => (
 
               <CardInfo>{description}</CardInfo>
             </TitleContent>
-            <TitleContent></TitleContent>
-            <TagList></TagList>
+
+            <TagList>
+              <TitleContent> Built using :</TitleContent>
+            </TagList>
           </BlogCard>
         )
       )}

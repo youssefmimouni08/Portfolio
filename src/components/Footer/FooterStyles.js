@@ -9,7 +9,7 @@ export const FooterWrapper = styled.section`
   text-align: center;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0 16px 48px;
+    padding: 0 0 48px 50px;
     width: calc(100vw - 32px);
   }
 `;
