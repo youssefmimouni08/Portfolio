@@ -4,7 +4,13 @@ import Link from 'next/link';
 import { Div1 } from '../Header/HeaderStyles';
 import { SocialIcons } from './HeroStyles';
 
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import {
+  AiFillSoundcloud,
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillYoutube,
+  AiFillLinkedin,
+} from 'react-icons/ai';
 
 import {
   Section,
@@ -32,14 +38,14 @@ const Hero = (props) => (
         </Link>
 
         <Div1>
-          <SocialIcons href='https://google.com'>
+          <SocialIcons href='https://github.com/youssefmimouni08'>
             <AiFillGithub size='3rem' />
           </SocialIcons>
-          <SocialIcons href='https://google.com'>
+          <SocialIcons href='https://www.linkedin.com/in/youssef-mimouni/'>
             <AiFillLinkedin size='3rem' />
           </SocialIcons>
-          <SocialIcons href='https://google.com'>
-            <AiFillInstagram size='3rem' />
+          <SocialIcons href='https://www.youtube.com/c/YouzarsifBeats'>
+            <AiFillYoutube size='3rem' />
           </SocialIcons>
         </Div1>
       </LeftSection>

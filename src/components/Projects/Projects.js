@@ -35,7 +35,7 @@ import Mysql from '../Projectimages/Mysql';
 const Projects = () => (
   <Sectionp nopadding id='projects'>
     <SectionDivider />
-    <SectionTitlep main>Projects</SectionTitlep>
+    <SectionTitlep main>My Projects</SectionTitlep>
     <GridContainer>
       <BlogCard key={1}>
         <TitleContent>
