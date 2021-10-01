@@ -39,8 +39,18 @@ const Header = () => (
         </Link>
       </li>
       <li>
-        <Link href=''>
-          <NavLink>Resume</NavLink>
+        <Link href='/Resume.pdf' target='_blank'>
+          <NavLink
+            style={{
+              border: '1px solid rgb(241, 250, 238)',
+              borderRadius: '3px',
+              padding: '12px 17px',
+              boxShadow:
+                'rgb(241 250 238 / 11%) 0px 4px 6px, rgb(241 250 238 / 8%) 0px 1px 3px',
+            }}
+          >
+            Resume
+          </NavLink>
         </Link>
       </li>
     </Div3>

@@ -5,10 +5,10 @@ import { Div1 } from '../Header/HeaderStyles';
 import { SocialIcons } from './HeroStyles';
 
 import {
-  AiFillSoundcloud,
   AiFillGithub,
   AiFillInstagram,
   AiFillYoutube,
+  AiFillMail,
   AiFillLinkedin,
 } from 'react-icons/ai';
 
@@ -43,6 +43,9 @@ const Hero = (props) => (
           </SocialIcons>
           <SocialIcons href='https://www.linkedin.com/in/youssef-mimouni/'>
             <AiFillLinkedin size='3rem' />
+          </SocialIcons>
+          <SocialIcons href='mailto:youssef.mimouni1@esprit.tn'>
+            <AiFillMail size='3rem' />
           </SocialIcons>
           <SocialIcons href='https://www.youtube.com/c/YouzarsifBeats'>
             <AiFillYoutube size='3rem' />
