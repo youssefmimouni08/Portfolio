@@ -33,7 +33,7 @@ export const BlogCard = styled.div`
   text-align: center;
   width: 20vw;
   background-color: rgb(69, 123, 157);
-  height: 65vh;
+  height: 60vh;
   overflow: hidden;
   @media (max-width: 768px) and (orientation: landscape) {
     width: 40vw !important;
@@ -45,17 +45,27 @@ export const BlogCard = styled.div`
   }
   @media ${(props) => props.theme.breakpoints.md} {
     width: 80vw;
-    height: fit-content;
+    height: 63vh;
   }
 `;
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
-  min-height: 52vh;
+  min-height: 49vh;
   @media (max-width: 768px) and (orientation: landscape) {
     margin-bottom: 0vh;
     min-height: 90vh;
+  }
+`;
+export const TitleContentF = styled.div`
+  text-align: center;
+  z-index: 20;
+  width: 100%;
+  background-color: rgb(29, 53, 87);
+  border: 1px solid rgb(29, 53, 87);
+  @media (max-width: 768px) and (orientation: landscape) {
+    margin-bottom: 0vh;
   }
 `;
 
@@ -148,14 +158,14 @@ export const ExternalLinks = styled.a`
 export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
-  padding: 2rem;
+  padding: 0.5rem;
   background-color: rgb(29, 53, 87);
   border: 1px solid rgb(29, 53, 87);
-  height: 17vh;
+  height: -webkit-fill-available;
 `;
 export const Tag = styled.li`
   color: #d8bfbf;
-  font-size: 1.5rem;
+  font-size: 2rem;
 `;
 export const Sectionp = styled.section`
   display: ${(props) => (props.grid ? 'grid' : 'flex')};
