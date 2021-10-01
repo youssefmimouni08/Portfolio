@@ -35,6 +35,11 @@ export const BlogCard = styled.div`
   background-color: rgb(69, 123, 157);
   height: 60vh;
   overflow: hidden;
+  transition: transform 250ms;
+  &:hover  {
+    transform: translateY(-10px);
+
+  }
   @media (max-width: 768px) and (orientation: landscape) {
     width: 40vw !important;
     height: 60vw !important;
@@ -47,6 +52,9 @@ export const BlogCard = styled.div`
     width: 80vw;
     height: 63vh;
   }
+  
+  }} 
+}
 `;
 export const TitleContent = styled.div`
   text-align: center;
@@ -62,6 +70,8 @@ export const TitleContentF = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
+  padding-bottom: 10px;
+  padding-top: 2px;
   background-color: rgb(29, 53, 87);
   border: 1px solid rgb(29, 53, 87);
   @media (max-width: 768px) and (orientation: landscape) {
@@ -158,7 +168,8 @@ export const ExternalLinks = styled.a`
 export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 1.5rem;
+  margin-bottom: 10px;
   background-color: rgb(29, 53, 87);
   border: 1px solid rgb(29, 53, 87);
   height: -webkit-fill-available;

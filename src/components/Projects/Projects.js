@@ -2,6 +2,7 @@ import React from 'react';
 import BgAnimation from '../BackgrooundAnimation/BackgroundAnimation';
 import Churn from '../Projectimages/Churn';
 import Kidzy from '../Projectimages/Kidzy';
+import Reacticon from '../Projectimages/Reacticon';
 import {
   BlogCard,
   CardInfo,
@@ -22,6 +23,14 @@ import {
 import { SectionDivider } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import Networky from '../Projectimages/Networky';
+import Nodejs from '../Projectimages/nodejs';
+import Mongo from '../Projectimages/Mongo';
+import Spark from '../Projectimages/Spark';
+import Elastic from '../Projectimages/Elastic';
+import Kibana from '../Projectimages/Kibana';
+import Symfony from '../Projectimages/Symfony';
+import Java from '../Projectimages/Java';
+import Mysql from '../Projectimages/Mysql';
 
 const Projects = () => (
   <Sectionp nopadding id='projects'>
@@ -40,7 +49,11 @@ const Projects = () => (
           </CardInfo>
         </TitleContent>
         <TitleContentF> Built using :</TitleContentF>
-        <TagList></TagList>
+        <TagList>
+          <Elastic />
+          <Spark />
+          <Kibana />
+        </TagList>
       </BlogCard>
       <BlogCard key={2}>
         <TitleContent>
@@ -54,7 +67,11 @@ const Projects = () => (
           </CardInfo>
         </TitleContent>
         <TitleContentF> Built using :</TitleContentF>
-        <TagList></TagList>
+        <TagList>
+          <Reacticon />
+          <Nodejs />
+          <Mongo />
+        </TagList>
       </BlogCard>
       <BlogCard key={3}>
         <TitleContent>
@@ -68,7 +85,11 @@ const Projects = () => (
           </CardInfo>
         </TitleContent>
         <TitleContentF> Built using :</TitleContentF>
-        <TagList></TagList>
+        <TagList>
+          <Symfony />
+          <Java />
+          <Mysql />
+        </TagList>
       </BlogCard>
     </GridContainer>
   </Sectionp>
