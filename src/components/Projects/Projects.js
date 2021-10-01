@@ -23,7 +23,7 @@ import {
 import { SectionDivider } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import Networky from '../Projectimages/Networky';
-import Nodejs from '../Projectimages/nodejs';
+import Nodejs from '../Projectimages/Nodejs';
 import Mongo from '../Projectimages/Mongo';
 import Spark from '../Projectimages/Spark';
 import Elastic from '../Projectimages/Elastic';
