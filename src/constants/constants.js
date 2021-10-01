@@ -1,7 +1,8 @@
 export const projects = [
   {
-    title: 'MERN Memories',
-    description: 'Some very long Description text aboutt the application.',
+    title: 'Customer Churn',
+    description:
+      'Machine learning model capable of predicting customer churn rate. With "DevOps".',
     image: '/images/1.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
@@ -9,8 +10,9 @@ export const projects = [
     id: 0,
   },
   {
-    title: 'MERN Memories',
-    description: 'Some very long Description text aboutt the application.',
+    title: 'Networky',
+    description:
+      'Collaborative Social Network application that helps developpers find their dream jobs and share ideas.',
     image: '/images/1.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
@@ -18,8 +20,9 @@ export const projects = [
     id: 1,
   },
   {
-    title: 'MERN Memories',
-    description: 'Some very long Description text aboutt the application.',
+    title: 'Kidzy',
+    description:
+      'Cross-Platform management application (web,desktop,mobile) created for an online KinderGarden.',
     image: '/images/1.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
