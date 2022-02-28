@@ -23,7 +23,7 @@ const Header = () => (
             color: 'white',
           }}
         >
-          <DiCssdeck size='3rem' /> <Span>Portfolio aaaa</Span>
+          <DiCssdeck size='3rem' /> <Span>Portfolio</Span>
         </a>
       </Link>
     </Div1LOGO>
